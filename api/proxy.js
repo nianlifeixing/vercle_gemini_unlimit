@@ -12,7 +12,7 @@ export const config = {
 
 // VERCEL: 从 process.env 读取配置，并提供默认值
 const CONFIG = {
-  upstream_url_base: process.env.UPSTREAM_URL_BASE || "https://generativelanguage.googleapis.com",
+  upstream_url_base: process.env.UPSTREAM_URL_BASE || "https://api-proxy.me/gemini",
   max_consecutive_retries: parseInt(process.env.MAX_CONSECUTIVE_RETRIES || "100", 10),
   debug_mode: process.env.DEBUG_MODE === 'true',
   retry_delay_ms: parseInt(process.env.RETRY_DELAY_MS || "750", 10),
